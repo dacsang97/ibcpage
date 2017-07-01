@@ -1,0 +1,53 @@
+header {
+    background: @brand-primary;
+}
+.club-name {
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &>a {
+        color: @brand-primary !important;
+    }
+}
+
+.ibc-menu {
+    background: @brand-primary;
+    min-height: 70px;
+    vertical-align: center;
+
+    li {
+        float: none;
+        display: inline-block;
+        a {
+            line-height: 70px;
+            min-height: 70px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            &::after {
+                position: absolute;
+                height: 4px;
+                bottom: -1px;
+                content: '';
+                border-radius: 4px;
+                z-index: 5;
+                width: 0;
+                left: 50%;
+                transition: all 0.2s ease 0.05s;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        &:hover {
+            // background-color: transparent;
+            a::after {
+                width: 100%;
+                left: 0;
+                background: white;
+            }
+        }
+    }
+}
