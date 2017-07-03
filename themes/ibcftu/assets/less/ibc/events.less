@@ -36,4 +36,102 @@
             font-size: 20px;
         }
     }
+    &.logo {
+        padding: 0;
+        background: #F0F0F1;
+        img {
+            display:block;
+            margin: auto;
+        }
+    }
+    &.intro {
+        padding: 0;
+        position: relative;
+        background: white;
+        min-height: 950px;
+        .intro-bg {
+            background-image: url("../images/unlock-header.jpg");
+            background-size: cover;
+            height: 500px;
+            max-height: 500px;
+        }
+        .intro-container {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            top: 350px;
+            height: 400px;
+            padding-left: 30px;
+            padding-right: 30px;
+            p {
+                color: white;
+                padding: 45px 20px;
+                font-size: 35px;
+                font-weight: 600;
+            }
+            h1 {
+                font-size: 42px;
+                color: @brand-primary;
+            }
+            .workshop {
+                background: #292B31;
+                height: 320px;
+                max-height: 320px;
+                p {
+                    text-align: right;
+                    text-transform: uppercase;
+                }
+            }
+            .purchasing {
+                background: @brand-primary;
+                height: 320px;
+                max-height: 320px;
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .carol {
+        .carousel-indicators {
+            position: initial;
+            margin-left: 0;
+            text-align: left;
+            width: 100%;
+            li {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background: #292B30;
+                margin: 0;
+                &.active {
+                    background: @brand-primary;
+                }
+            }
+        }
+        .item {
+            p {
+                font-weight: normal;
+                font-size: 22px;
+                color: black;
+                padding: 0;
+                text-align: justify;
+            }
+        }
+    }
+    &.topic {
+        background: #F0F0F1;
+        h1 {
+            font-size: 42px;
+            color: #292B31;
+        }
+        .carousel-indicators {
+            text-align: right;
+        }
+        #workshop-topic {
+            min-height: 300px;
+        }
+    }
 }
