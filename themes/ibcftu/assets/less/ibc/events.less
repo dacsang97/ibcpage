@@ -241,5 +241,54 @@ p {
             align-items: center;
         }
     }
+    &.content {
+        background: url('../images/ndws_bg.jpg');
+        background-size: cover;
+        h1 {
+            font-size: 42px;
+            color: white;
+            margin-top: 0;
+            font-weight: 500;
+            &::after {
+                position: absolute;
+                height: 8px;
+                bottom: -15px;
+                content: '';
+                z-index: 5;
+                width: 100px;
+                left: 0;
+                transition: all 0.2s ease 0.05s;
+                background: white;
+            }
+        }
+        .first {
+            margin-top: 50px !important;
+        }
+        .row-content {
+            margin-top: 15px;
+            border: 2px solid white;
+
+            p {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 15px;
+                color: white;
+                &.day-left {
+                    justify-content: center;
+                    text-transform: uppercase;
+                    border-right: 2px solid white;
+                }
+                &.day-right {
+                    justify-content: center;
+                    text-transform: uppercase;
+                    border-left: 2px solid white;
+                }
+                &.content-day-left {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
 }
 
