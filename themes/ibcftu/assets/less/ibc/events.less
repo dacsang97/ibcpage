@@ -154,6 +154,7 @@ body {overflow-x: hidden;}
                     border: 0;
                     color: white;
                     border-radius: 0;
+                    margin-right: 0;
                     &:before {
                         position: absolute;
                         content: " ";
@@ -162,6 +163,7 @@ body {overflow-x: hidden;}
                         width: 100%;
                         height: 2px;
                         background: white;
+                        transition: height 0.1s;
                     }
                 }
                 &.active {
@@ -183,6 +185,25 @@ body {overflow-x: hidden;}
             color: white;
         }
     }
-
+    &.scale {
+        background: #F0F0F1;
+        h1 {
+            font-size: 42px;
+            color: @brand-text;
+        }
+        p {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: @brand-text;
+        }
+        .middle {
+            border-left: 1px solid @brand-text;
+            border-right: 1px solid @brand-text;
+            p {
+                text-align: justify;
+                padding: 15px;
+            }
+        }
+    }
 }
 
