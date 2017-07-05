@@ -1,0 +1,146 @@
+.about-us-bg {
+    margin: 0;
+    padding: 0;
+}
+
+.activity {
+    h1 {
+        font-size: 42px;
+        color: white;
+        margin-top: 0;
+        position: relative;
+        &::after {
+            position: absolute;
+            height: 8px;
+            bottom: -15px;
+            content: '';
+            z-index: 5;
+            width: 100px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.2s ease 0.05s;
+            background: white;
+        }
+    }
+    p {
+        margin-top: 50px;
+        color: white;
+        font-size: 22px;
+        text-align: justify;
+    }
+}
+
+.mission {
+    position: relative;
+    background: @brand-text;
+
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 50%;
+        background: @brand-primary;
+        top: 0;
+        left: 0;
+    }
+    .box {
+        background: white;
+        padding: 5px 30px;
+        min-height: 705px;
+        &.right {
+            background: #D5DCDD;
+        }
+        h2 {
+            position: relative;
+            color: @brand-text;
+            margin-bottom: 30px;
+            &::after {
+                position: absolute;
+                height: 8px;
+                bottom: -15px;
+                content: '';
+                z-index: 5;
+                width: 100px;
+                right: 0;
+                left: 0;
+                margin-left: auto;
+                margin-right: auto;
+                transition: all 0.2s ease 0.05s;
+                background: @brand-text;
+            }
+        }
+        p {
+            color: @brand-text;
+            font-size: 22px;
+            text-align: justify;
+            text-indent: 50px;
+        }
+    }
+}
+
+.structure {
+    background: @brand-text;
+    h1 {
+        font-size: 42px;
+        color: white;
+        margin-top: 0;
+        position: relative;
+        &::after {
+            position: absolute;
+            height: 8px;
+            bottom: -15px;
+            content: '';
+            z-index: 5;
+            width: 100px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.2s ease 0.05s;
+            background: white;
+        }
+    }
+    h2 {
+        color: white;
+    }
+    p {
+        color: white;
+        font-size: 22px;
+        text-align: justify;
+        .about-club {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .slide {
+        margin-top: 50px;
+    }
+}
+
+.about-partner {
+    background: #F0F0F1;
+    min-height: 300px;
+    h1 {
+        font-size: 42px;
+        color: @brand-primary;
+        margin-top: 0;
+        position: relative;
+        &::after {
+            position: absolute;
+            height: 8px;
+            bottom: -15px;
+            content: '';
+            z-index: 5;
+            width: 100px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.2s ease 0.05s;
+            background: @brand-primary;
+        }
+    }
+}
