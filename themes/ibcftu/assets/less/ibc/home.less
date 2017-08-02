@@ -8,8 +8,7 @@
         border: 0;
         padding: 15px 40px;
     }
-    h1 {
-        font-size: 50px;
+    h2 {
         text-transform: uppercase;
         font-weight: bold;
         position: relative;
@@ -31,7 +30,7 @@
         padding: 0;
         position: relative;
         background: white;
-        min-height: 800px;
+        min-height: 680px;
 
         .about-us-bg {
             background-image: url("../images/about-bg.png");
@@ -48,10 +47,10 @@
             right: 0;
             top: 300px;
             background: rgba(55, 66, 145, 0.85);
-            height: 400px;
+            height: 320px;
             padding-left: 30px;
             padding-right: 30px;
-            h1 {
+            h2 {
                 color: white !important;
 
                 &::after {
@@ -88,7 +87,7 @@
     }
     &.event {
         background: white;
-        h1 {
+        h2 {
             color: black;
             margin-top: 0;
             &::after {
@@ -122,7 +121,7 @@
     }
     &.connect-the-flow {
         background-color: #f1f0f2;
-        h1 {
+        h2 {
             color: @brand-primary;
             margin-top: 0;
             &::after {
@@ -151,7 +150,7 @@
         }
     }
     &.tuyen-dung{
-        h1 {
+        h2 {
             color: white;
             margin-top: 0;
             margin-bottom: 30px;
@@ -171,31 +170,47 @@
         }
     }
     &.tai-lieu {
-        background-image: url('../images/tai-lieu.png');
-        background-size: cover;
+        background: #292B33;
         height: 400px;
         max-height: 450px;
-        h1 {
-            color: @brand-primary;
-            margin-top: 0;
-            margin-bottom: 30px;
-            &::after {
-                background: @brand-primary;
-                left: 0;
-            }
-        }
-    }
-    &.lien-he {
-        background: #292B33;
-        height: 450px;
-        max-height: 500px;
-        h1 {
+        h2 {
             color: white;
             margin-top: 0;
             margin-bottom: 30px;
             &::after {
                 background: white;
                 left: 0;
+            }
+        }
+    }
+    &.lien-he {
+        background: @brand-primary;
+        height: 450px;
+        min-height: 500px;
+        h2 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 30px;
+            &::after {
+                background: white;
+                left: 0;
+            }
+        }
+        p {
+            color: white;
+        }
+        form {
+            label {
+                color: white;
+            }
+            .form-control {
+                border-radius: 0;
+                background-color: @brand-primary;
+                border: 2px solid white;
+                color: white;
+            }
+            .btn.btn-primary {
+                border-color: white;
             }
         }
     }
